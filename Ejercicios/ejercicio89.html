@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 89 - Tabla colores y códigos</title>
+  <style>
+    q { display:none; }
+    table {
+      border-collapse: collapse;
+      margin: 14px 0 0 5px;
+      font-size: 1.16em;
+      font-family: Arial, Helvetica, sans-serif;
+      min-width: 540px;
+      box-shadow: 0 1px 4px #aaa;
+      text-align: center;
+    }
+    th {
+      background: linear-gradient(to bottom,#357db0,#2070ae 60%);
+      color: #fff;
+      font-size: 1.08em;
+      padding: 8px 5px;
+      border: none;
+    }
+    td {
+      padding: 7px 9px;
+      border: none;
+      font-weight: bold;
+    }
+    .color-red        { background: #f00;     color: #fff; }
+    .color-cyan       { background: #0ff;     color: #000; }
+    .color-blue       { background: #00f;     color: #fff; }
+    .color-darkblue   { background: #0000a0;  color: #fff; }
+    .color-lightblue  { background: #add8e6;  color: #000; }
+    .color-purple     { background: #800080;  color: #fff; }
+    .color-yellow     { background: #ffff00;  color: #000; }
+    .color-lime       { background: #0f0;    color: #000; }
+    .color-fuchsia    { background: #ff00ff;  color: #000; }
+    .color-white      { background: #fff;     color: #000; }
+    .color-silver     { background: #c0c0c0;  color: #000; }
+    .color-grey       { background: #808080;  color: #fff; }
+    .color-black      { background: #000;     color: #fff; }
+    .color-orange     { background: #ffa500;  color: #000; }
+    .color-brown      { background: #a52a2a;  color: #fff; }
+    .color-maroon     { background: #800000;  color: #fff; }
+    .color-green      { background: #008000;  color: #fff; }
+    .color-olive      { background: #808000;  color: #fff; }
+    td:not([class*='color-']):not(:empty) {
+      background: #f2f2f2;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <q></q>
+  <table>
+    <tr>
+      <th>Color Name</th>
+      <th>Color Code</th>
+      <th>Color Name</th>
+      <th>Color Code</th>
+    </tr>
+    <tr>
+      <td class="color-red">Red</td>
+      <td>#FF0000</td>
+      <td class="color-white">White</td>
+      <td>#FFFFFF</td>
+    </tr>
+    <tr>
+      <td class="color-cyan">Cyan</td>
+      <td>#00FFFF</td>
+      <td class="color-silver">Silver</td>
+      <td>#C0C0C0</td>
+    </tr>
+    <tr>
+      <td class="color-blue">Blue</td>
+      <td>#0000FF</td>
+      <td class="color-grey">Grey</td>
+      <td>#808080</td>
+    </tr>
+    <tr>
+      <td class="color-darkblue">DarkBlue</td>
+      <td>#0000A0</td>
+      <td class="color-black">Black</td>
+      <td>#000000</td>
+    </tr>
+    <tr>
+      <td class="color-lightblue">LightBlue</td>
+      <td>#ADD8E6</td>
+      <td class="color-orange">Orange</td>
+      <td>#FFA500</td>
+    </tr>
+    <tr>
+      <td class="color-purple">Purple</td>
+      <td>#800080</td>
+      <td class="color-brown">Brown</td>
+      <td>#A52A2A</td>
+    </tr>
+    <tr>
+      <td class="color-yellow">Yellow</td>
+      <td>#FFFF00</td>
+      <td class="color-maroon">Maroon</td>
+      <td>#800000</td>
+    </tr>
+    <tr>
+      <td class="color-lime">Lime</td>
+      <td>#00FF00</td>
+      <td class="color-green">Green</td>
+      <td>#008000</td>
+    </tr>
+    <tr>
+      <td class="color-fuchsia">Fuchsia</td>
+      <td>#FF00FF</td>
+      <td class="color-olive">Olive</td>
+      <td>#808000</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página personal de José Manuel Moreno</title>
+  <link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Arial, Verdana, sans-serif; color:#185f04; }
+    h1 { color: #54ae21; }
+    .degradado1 {
+      background: linear-gradient(to right, #0080FF, #002060);
+      color: white; font-weight: bold; padding: 4px 12px; width: max-content; border-radius:7px; margin-bottom: 5px;
+    }
+    .degradado2 {
+      background: linear-gradient(to right, #ffdd2a 40%, #d872ff 90%);
+      color: #151515; font-weight: bold; padding: 4px 12px; margin-bottom: 5px; border-radius: 7px;
+    }
+    .tangerine {
+      font-family: 'Tangerine', cursive; font-size: 2.2em; margin-bottom: 5px; color: #408942;
+      font-weight: bold; margin-top: 10px;
+    }
+    .alexbrush {
+      font-family: 'Alex Brush', cursive; font-size: 1.7em; color: #348032;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .edgefont {
+      font-family: 'Alex Brush', cursive; font-size: 1.15em; color: #3b9555; font-style: italic;
+    }
+    .green { color: #226e10; }
+    .bold { font-weight: bold;}
+    .bitmap { width:100px; }
+    .vectorial { width:100px; filter: grayscale(100%) brightness(1.2); }
+    .cajas-flex { display:flex; flex-direction:row; gap:24px; margin-top:12px;}
+    .caja-borde { border:2px solid #43a543; width:105px; height:105px; margin:4px; display:flex; align-items:end; justify-content:center; }
+    .borde-su { border-top-left-radius: 60px;}
+    .borde-sd { border-top-right-radius: 40px;}
+    .borde-id { border-bottom-right-radius: 70px;}
+    .borde-ii { border-bottom-left-radius: 40px;}
+    .labca { font-size:0.95em; color:#367336; font-weight:bold; margin-bottom:6px;}
+    .center { display: flex; justify-content:center; align-items:center;}
+  </style>
+</head>
+<body>
+  <h1 class="green">Página personal de José Manuel Moreno</h1>
+  <div>
+    <div class="degradado1">Texto de color "Blanco" sobre fondo "Azul"</div>
+    <div class="degradado2">Texto de color "Negro" sobre fondo con "colores degradados"</div>
+  </div>
+  <div class="tangerine">Texto con la tipografía externa "Tangerine" de Google Fonts</div>
+  <div class="alexbrush">Texto con la tipografía externa <span style="color:#258E1D;">"Alex Brush"</span> <span class="edgefont">de Adobe Edge Web Fonts</span></div>
+  <div>
+    <h2 class="green" style="font-size:1.32em;">Encabezado (tipo h1)</h2>
+    <div class="green" style="font-size:1.15em; font-weight:bold; margin: 3px 0;">Encabezado (tipo h2)</div>
+    <div style="font-size:1.09em; font-weight:bold; color:#186813;">Encabezado (tipo h3)</div>
+    <div style="font-size:1.01em; font-weight:bold; color:#3a763a;">Encabezado (tipo h4)</div>
+    <div style="font-size:0.98em; font-weight:bold; color:#456d4e;">Encabezado (tipo h5)</div>
+  </div>
+  <div style="margin: 9px 0 5px 0; color:#145b0b;">
+    El signo "mayor qué" se representa con &gt; y el signo "menor que" con &lt;. <br>
+    El signo "mayor igual" es &ge; y el signo "menor igual" es &le;.
+  </div>
+
+  <div class="cajas-flex">
+    <div>
+      <div class="labca">Imagen de tipo <b>bitmap</b></div>
+      <img class="bitmap" src="0BAE5774-CBE3-46D9-B511-467D1B0F984D.jpg" alt="Real Betis bitmap">
+    </div>
+    <div>
+      <div class="labca">Imagen de tipo <b>vectorial</b></div>
+      <!-- Sustituye por tu SVG/PNG si es necesario -->
+      <img class="vectorial" src="https://upload.wikimedia.org/wikipedia/commons/4/43/Real_betis_logo.svg" alt="Real Betis vectorial">
+    </div>
+    <div style="width:345px;" class="center">
+      <iframe width="320" height="180" src="https://www.youtube.com/embed/ieb_5Hq7BdQ" title="Akrapovic Exhaust BMW M2" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="cajas-flex" style="margin-top: 30px;">
+    <div>
+      <div class="caja-borde borde-su"></div>
+      <div class="labca" style="text-align:center;">Borde <b>Superior Izquierdo</b> al 60%</div>
+    </div>
+    <div>
+      <div class="caja-borde borde-sd"></div>
+      <div class="labca" style="text-align:center;">Borde <b>Superior Derecho</b> al 40%</div>
+    </div>
+    <div>
+      <div class="caja-borde borde-id"></div>
+      <div class="labca" style="text-align:center;">Borde <b>Inferior Derecho</b> al 70%</div>
+    </div>
+    <div>
+      <div class="caja-borde borde-ii"></div>
+      <div class="labca" style="text-align:center;">Borde <b>Inferior Izquierdo</b> de 40px</div>
+    </div>
+    <div>
+      <div class="caja-borde"></div>
+      <div class="labca" style="text-align:center;"></div>
+    </div>
+  </div>
+</body>
+</html>

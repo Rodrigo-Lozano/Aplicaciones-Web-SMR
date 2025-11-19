@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 51 - Grid letras</title>
+  <style>
+    q { display:none; }
+    .grid51 {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(4, 80px);
+      gap: 2px;
+      width: 410px;
+      height: 330px;
+      margin: 15px auto 0 auto;
+      background: #fff;
+      border: 3px solid #888;
+    }
+    .cell {
+      background: #d8d8d8;
+      border: 1px solid #888;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-family: Times New Roman, serif;
+      font-weight: 500;
+    }
+    /* Ubicación exacta de cada celda según imagen */
+    .a { grid-column: 1; grid-row: 1; }
+    .b { grid-column: 2; grid-row: 1; }
+    .c { grid-column: 3; grid-row: 1; }
+    .d { grid-column: 4; grid-row: 1; }
+    .ei { grid-column: 1; grid-row: 2; }
+    .f { grid-column: 2; grid-row: 2;}
+    .gh { grid-column: 3 / span 2; grid-row: 2;}
+    .j { grid-column: 2; grid-row: 3;}
+    .l { grid-column: 4; grid-row: 3;}
+    .ko { grid-column: 3; grid-row: 3 / span 2;}
+    .m { grid-column: 1; grid-row: 4; }
+    .n { grid-column: 2; grid-row: 4; }
+    .p { grid-column: 4; grid-row: 4; }
+  </style>
+</head>
+<body>
+  <q></q>
+  <div class="grid51">
+    <div class="cell a">A</div>
+    <div class="cell b">B</div>
+    <div class="cell c">C</div>
+    <div class="cell d">D</div>
+    <div class="cell ei">E,I</div>
+    <div class="cell f">F</div>
+    <div class="cell gh">G,H</div>
+    <div class="cell j">J</div>
+    <div class="cell l">L</div>
+    <div class="cell ko">K,O</div>
+    <div class="cell m">M</div>
+    <div class="cell n">N</div>
+    <div class="cell p">P</div>
+  </div>
+</body>
+</html>

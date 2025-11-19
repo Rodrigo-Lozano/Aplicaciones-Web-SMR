@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 56 - Tabla sencilla de productos</title>
+  <style>
+    q { display:none; }
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-size: 1.07em;
+      min-width: 650px;
+      background: #fff;
+      font-family: Times New Roman, serif;
+    }
+    th, td {
+      border: 2px solid #888;
+      padding: 7px 7px;
+      vertical-align: top;
+    }
+    th {
+      background: #f5f5f5;
+      font-weight: bold;
+      text-align: left;
+      font-size: 1.1em;
+    }
+    .right { text-align: right; }
+    .marca { font-style: italic; }
+    .tachado { text-decoration: line-through; }
+    .carac { font-size: 1.01em; }
+  </style>
+</head>
+<body>
+  <q></q>
+  <table>
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Marca</th>
+      <th>Características</th>
+    </tr>
+    <tr>
+      <td>Tostador</td>
+      <td>
+        Antes: <span class="tachado">1200 pesos</span><br>
+        Ahora: 999 pesos
+      </td>
+      <td class="marca">Kisuki</td>
+      <td class="carac">Capacidad de 4 rebanadas</td>
+    </tr>
+    <tr>
+      <td>Plancha</td>
+      <td>
+        Antes: <span class="tachado">650 pesos</span><br>
+        Ahora: 499 pesos
+      </td>
+      <td class="marca">Matsuma</td>
+      <td class="carac">7 niveles de calor</td>
+    </tr>
+    <tr>
+      <td>Licuadora</td>
+      <td>
+        Antes: <span class="tachado">700 pesos</span><br>
+        Ahora: 539 pesos
+      </td>
+      <td class="marca">Motiki</td>
+      <td class="carac">
+        5 velocidades<br>
+        Vaso con capacidad de 2 litros
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

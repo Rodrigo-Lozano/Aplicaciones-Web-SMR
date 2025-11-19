@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tarea Obligatoria Modulo 3</title>
+  <style>
+    body { font-family: Times New Roman, serif; }
+    h1 { font-size: 2.1em; margin-bottom: 6px; }
+    h2 { font-size: 1.35em; margin-top: 36px; }
+    .bloque {
+      border: none; 
+      margin: 18px 0 12px 0;
+      padding: 9px 6px;
+      font-size: 1em;
+      min-height: 75px;
+    }
+    .destacado { font-weight: bold; font-size: 1.13em;}
+    .subrayado { font-weight: bold; text-decoration: underline;}
+    .gris { color: #111; }
+    .italicas { font-style: italic; }
+    .link { color: #2534d8; }
+    .rojo { color: #b00000; font-size: 2em; font-weight: bold; }
+    .ejercicio { color: #b00000; font-size: 2em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Tarea Obligatoria Modulo 3</h1>
+  <div style="font-size:1em; margin-bottom:14px;">
+    Se deben incluir en la página los siguientes elementos:<br>
+    1) El nombre de la persona que hace la entrega debajo del título &lt;h1&gt;<br>
+    2) Un bloque &lt;div&gt; debajo de la fecha y la hora y las instrucciones JavaScript necesarias para que muestre en dicho bloque el contenido de las siguientes propiedades DOM en líneas separadas, que comiencen por el nombre de la propiedad(es) mostrada(s):<br>
+    a) Contenido de innerHTML de elemento identificado por id="h2"<br>
+    b) Contenido de outerHTML de elemento identificado por id="h1"<br>
+    c) Contenido de la propiedad global: location.href<br>
+    d) Contenido de la propiedad global: location<br>
+    e) Contenido de las propiedades globales: screen.width y screen.height
+  </div>
+  <h2 id="h1">Buenas tardes</h2>
+  <div class="subrayado" style="margin-bottom:5px;">Desarrollo del punto 1</div>
+  
+  <div class="gris">Tarea Presentada por : <span class="italicas">Leonardo Rojas</span></div>
+  <div class="destacado" id="h2" style="margin-top:18px; margin-bottom:1px;">La fecha y la hora son:</div>
+  <div class="bloque" id="bloque"></div>
+  
+  <div class="subrayado" style="margin-top:36px;">Desarrollo del Punto 2</div>
+  <div style="margin-bottom:8px;">
+    <b>a)</b> El innerHTML del elemento identificado por id="h2" es: <b><span id="res_inner"></span></b>
+  </div>
+  <div style="margin-bottom:8px;">
+    <b>b)</b> El outerHTML del elemento identificado por id="h1" es:<br> <b><span id="res_outer"></span></b>
+  </div>
+  <div style="margin-bottom:8px;">
+    <b>c)</b> El contenido de la propiedad Global: location.href es: <b><span id="res_href"></span></b>
+  </div>
+  <div style="margin-bottom:8px;">
+    <b>d)</b> El contenido de la propiedad Global: location es: <b><span id="res_loc"></span></b>
+  </div>
+  <div>
+    <b>e)</b> El contenido de las propiedades globales: screen.width y screen.height <b><span id="res_screen"></span></b>
+  </div>
+  <div style="margin-top:24px;">
+    <a href="#" class="link">Regreso al Menú Principal</a>
+  </div>
+
+  <script>
+    // Mostrar fecha y hora
+    const now = new Date();
+    const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second:'2-digit', timeZoneName:'short'};
+    document.getElementById('bloque').innerHTML =
+      now.toString() + "<br>" +
+      "innerHTML h2: " + document.getElementById('h2').innerHTML + "<br>" +
+      "outerHTML h1: " + document.getElementById('h1').outerHTML + "<br>" +
+      "location.href: " + location.href + "<br>" +
+      "location: " + location + "<br>" +
+      "screen.width=" + screen.width + " y screen.height=" + screen.height;
+
+    // Respuestas diferenciadas para el punto 2
+    document.getElementById('res_inner').textContent = document.getElementById('h2').innerHTML;
+    document.getElementById('res_outer').textContent = document.getElementById('h1').outerHTML;
+    document.getElementById('res_href').textContent = location.href;
+    document.getElementById('res_loc').textContent = location;
+    document.getElementById('res_screen').textContent = "screen.width=" + screen.width + " y screen.height=" + screen.height;
+  </script>
+</body>
+</html>

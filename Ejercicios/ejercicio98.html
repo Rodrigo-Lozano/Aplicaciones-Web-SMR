@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Secciones y líneas generales de un documento HTML5</title>
+  <style>
+    body { font-family: Arial, sans-serif; color: #222;}
+    .verde { color: #099940; font-size: 2em; font-weight:bold; margin-bottom:10px;}
+    .azul { color: #204bb5; font-size: 1.3em; font-weight:bold; margin-top: 17px; margin-bottom:7px;}
+    .celeste { color: #1db9d7; font-size: 1.15em; font-weight: bold; margin-top: 13px; margin-bottom:7px;}
+    .verde2 { color: #3bcd38; font-size: 1.08em; font-weight: bold; margin-bottom:6px; margin-top:8px; }
+    .tabla-secciones {
+      border-collapse: collapse;
+      font-size: 0.97em;
+      margin-top: 22px;
+      margin-bottom: 40px;
+      background: #fafbfe;
+    }
+    .tabla-secciones th {
+      background: #eef5f9; 
+      border: 1px solid #b8d0e0;
+      color: #222;
+      padding: 3px 10px;
+      font-weight:900;
+    }
+    .tabla-secciones td {
+      border: 1px solid #b8d0e0;
+      padding: 2px 14px;
+    }
+    ul { margin-top: 7px; margin-bottom: 7px;}
+    .par { color:#222; margin-bottom: 11px; }
+    .mini { font-size:0.98em; color:#555; }
+    .ejemplo { color: #444; }
+    .wrap { max-width:1100px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="verde">Secciones y líneas generales de un documento HTML5</div>
+    <div class="mini">La especificación HTML5 trae muchos nuevos elementos a los desarrolladores web, permitiéndoles describir la estructura de un documento web con semántica estandarizada. Este documento describe estos elementos y cómo usarlos para definir el perfil de cualquier documento.</div>
+
+    <div class="azul">Problemas resueltos por HTML5</div>
+    <div class="mini">
+      La definición de la estructura de un documento en HTML4 y su algoritmo de perfilado es muy técnico y generaba numerosos problemas:
+      <ul>
+        <li><b>HTML5 quita la necesidad de elementos &lt;div&gt;</b> para definir secciones semánticas sin definir valores específicos para los atributos class, introduciendo un nuevo elemento, &lt;section&gt;, el elemento de sección HTML.</li>
+        <li>Mezclar varios documentos es difícil: la inclusión en sub-documentos de un documento principal. Esto se resuelve en HTML5 con los elementos de seccionado &lt;article&gt;, &lt;section&gt;, &lt;nav&gt; y &lt;aside&gt; con sub-secciones.</li>
+        <li>HTML5 introduce el elemento &lt;hgroup&gt; que oculta los *sub-encabezados* dentro de un grupo (&lt;h1&gt;Justine&lt;/h1&gt;&lt;h2&gt;Les Malheurs de la Vertu&lt;/h2&gt;).</li>
+        <li>Un documento puede tener secciones especiales (por ejemplo, información legal o de navegación) que no son parte del flujo principal (&lt;footer&gt; y &lt;header&gt;).</li>
+        <li>HTML5 introduce elementos de sección específicos: para colecciones de enlaces (&lt;nav&gt;), tabla de contenidos, información relacionada, etc.</li>
+      </ul>
+    </div>
+
+    <div class="celeste">El algoritmo de perfilado de HTML5</div>
+    <div class="verde2">Definiendo secciones en HTML5</div>
+    <div class="par">
+      Todo el contenido incluido dentro del elemento &lt;body&gt; es parte de una sección. Las secciones en HTML5 pueden ser anidadas. El contenido principal lo define el elemento &lt;body&gt;. Los límites de la sección son los de los elementos &lt;body&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, y &lt;nav&gt;.
+    </div>
+
+    <table class="tabla-secciones">
+      <tr>
+        <th>Sección</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>&lt;body&gt;</td>
+        <td>Define el contenido principal de un documento HTML</td>
+      </tr>
+      <tr>
+        <td>&lt;section&gt;</td>
+        <td>Define una sección del documento</td>
+      </tr>
+      <tr>
+        <td>&lt;nav&gt;</td>
+        <td>Define una colección de enlaces de navegación</td>
+      </tr>
+      <tr>
+        <td>&lt;article&gt;</td>
+        <td>Define contenido independiente y auto-contenido en el documento</td>
+      </tr>
+      <tr>
+        <td>&lt;aside&gt;</td>
+        <td>Define contenido relacionado indirectamente</td>
+      </tr>
+      <tr>
+        <td>&lt;header&gt;</td>
+        <td>Define el encabezado de una sección</td>
+      </tr>
+      <tr>
+        <td>&lt;footer&gt;</td>
+        <td>Define el pie de una sección</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

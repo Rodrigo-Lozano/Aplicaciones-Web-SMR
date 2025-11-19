@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 52 - Tablas anidadas</title>
+  <style>
+    q { display:none; }
+    table {
+      border-collapse: collapse;
+      margin: 10px auto;
+      font-size: 1.25em;
+      background: #fff;
+    }
+    td {
+      border: 2px solid #888;
+      text-align: center;
+      min-width: 64px;
+      height: 38px;
+      font-family: Arial, sans-serif;
+      padding: 0;
+    }
+    .subtabla td {
+      border: 2px solid #888;
+      font-size: 1em;
+      min-width: 48px;
+      height: 32px;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <q></q>
+  <table>
+    <tr>
+      <td>Celda</td>
+      <td>Celda</td>
+      <td>Celda</td>
+      <td>Celda</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Celda</td>
+      <td colspan="2">Celda</td>
+      <td rowspan="2">Celda</td>
+    </tr>
+    <tr>
+      <td colspan="2">Celda</td>
+    </tr>
+    <tr>
+      <td>Celda</td>
+      <td colspan="2" rowspan="2">
+        <table class="subtabla">
+          <tr>
+            <td>Celda</td>
+            <td>Celda</td>
+          </tr>
+          <tr>
+            <td>Celda</td>
+            <td>Celda</td>
+          </tr>
+        </table>
+      </td>
+      <td>Celda</td>
+    </tr>
+    <tr>
+      <td>Celda</td>
+      <td>Celda</td>
+    </tr>
+  </table>
+</body>
+</html>

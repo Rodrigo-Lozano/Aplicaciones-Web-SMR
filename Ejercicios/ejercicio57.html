@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 57 - Tabla con celdas extendidas</title>
+  <style>
+    q { display:none; }
+    .titulo {
+      text-align: center;
+      font-size: 2em;
+      font-family: Times New Roman, serif;
+      font-weight: bold;
+      margin-top: 14px;
+      margin-bottom: 6px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      font-size: 1.22em;
+      background: #fff;
+      font-family: Times New Roman, serif;
+      min-width: 430px;
+    }
+    th, td {
+      border: 2px solid #888;
+      text-align: center;
+      padding: 7px 5px;
+      min-width: 60px;
+      min-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <q></q>
+  <div class="titulo">Tabla con celdas extendidas</div>
+  <table>
+    <tr>
+      <td colspan="2">alfa</td>
+      <td>bravo</td>
+      <td rowspan="2">charlie</td>
+    </tr>
+    <tr>
+      <td>delta</td>
+      <td>echo</td>
+      <td colspan="1">foxtrot</td>
+      <td>golf</td>
+    </tr>
+    <tr>
+      <td rowspan="2">hotel</td>
+      <td rowspan="2">india</td>
+      <td>juliet</td>
+      <td rowspan="2">lima</td>
+    </tr>
+    <tr>
+      <td>kilo</td>
+    </tr>
+    <tr>
+      <td>mike</td>
+      <td>november</td>
+      <td>oscar</td>
+      <td>papa</td>
+      <td>quebec</td>
+    </tr>
+  </table>
+</body>
+</html>

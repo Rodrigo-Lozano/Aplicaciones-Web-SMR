@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 95 - Tarea Opcional 3 Modulo 2</title>
+  <style>
+    body { font-family: Times, serif; margin: 18px; }
+    .rojo { color: #b00000; font-size: 2em; font-weight: bold; }
+    .ejercicio { color: #a81f1f; font-size: 2em; font-weight: bold; }
+    .titulotarea { font-size: 1.22em; font-weight: bold; margin-top: 20px; }
+    .green { color: #20921e; font-weight: bold; }
+    .sp { font-size: 0.98em; }
+    .separador { margin: 45px 0 24px 0;}
+    figure { margin: 32px 0 22px 0;}
+  </style>
+</head>
+<body>
+  <span class="titulotarea">Tarea Opcional 3 Modulo 2</span>
+  <div class="sp">
+    Realiza una página que utilice imágenes responsive con la etiqueta picture, que contenga un vídeo de YouTube y archivos de imagen vectorial SVG
+  </div>
+  
+  <div class="green" style="font-size:1.08em; margin-top:20px;">Etiqueta &lt;Picture&gt;</div>
+  <picture>
+    <!-- Cambia los src por tus imágenes reales y de diferentes resoluciones -->
+    <source srcset="ovejas-grande.jpg" media="(min-width:800px)">
+    <source srcset="ovejas-mediana.jpg" media="(min-width:480px)">
+    <img src="ovejas.jpg" alt="Ovejas de fiesta" style="width:92%; max-width:720px; display:block; margin-bottom:24px;">
+  </picture>
+  
+  <div style="font-size:1.07em; margin-top:34px; font-weight: 500;">Imagen Vectorial</div>
+  <svg width="90" height="90" viewBox="0 0 100 100">
+    <circle cx="30" cy="30" r="30" fill="black"/>
+    <circle cx="60" cy="50" r="20" fill="red"/>
+    <path d="M35 70 Q60 80 82 50" stroke="#7ca0d9" stroke-width="5" fill="none"/>
+  </svg>
+
+  <div style="font-size:1.07em; margin-top:40px; font-weight: 500;">Video de Youtube</div>
+  <iframe width="420" height="240"
+    src="https://www.youtube.com/embed/C9xFRbFfZcs"
+    title="Dinosaur battle video" 
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  
+  <div style="margin-top:36px; font-weight:bold;">Fin de Tarea</div>
+  <div style="font-size:0.98em; color:#235;">Enlace al Menú Principal</div>
+</body>
+</html>

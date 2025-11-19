@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 59 - Práctica tablas fusionadas</title>
+  <style>
+    q { display:none; }
+    table {
+      border-collapse: collapse;
+      margin: 14px 0 0 12px;
+      font-size: 1.15em;
+      font-family: Arial, sans-serif;
+      border: 4px solid #2070ae;
+      background: #fff;
+    }
+    th, td {
+      border: 3px solid #2070ae;
+      text-align: center;
+      padding: 10px 6px;
+    }
+    .vertical {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .titulo {
+      font-size: 1.3em;
+      font-family: Times New Roman, serif;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: 3px solid #2070ae;
+    }
+    .subtitulo {
+      font-size: 1.1em;
+      font-family: Times New Roman, serif;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <q></q>
+  <table>
+    <tr>
+      <td class="vertical" rowspan="3">EJEMPLO</td>
+      <td colspan="8" class="titulo">PRÁCTICA DE TABLAS</td>
+    </tr>
+    <tr>
+      <td colspan="5" class="subtitulo">Creación de tablas</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Uno</td>
+      <td>Dos</td>
+      <td>Tres</td>
+      <td>Cuatro</td>
+      <td>cinco</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>

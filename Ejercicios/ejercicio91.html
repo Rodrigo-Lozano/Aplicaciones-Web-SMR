@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 91 - Tabla con colores CSS</title>
+  <style>
+    q { display:none; }
+    table {
+      border-collapse: collapse;
+      margin: 12px auto;
+      font-size: 1.15em;
+      width: 95%;
+      background: #fff;
+    }
+    th, td {
+      border: none;
+      text-align: left;
+      padding: 10px 18px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 2em;
+    }
+    .cab {
+      background: #e9585c;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 2em;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .fila2 { background: #233dbb; color: #fff; font-size: 1em;}
+    .fila3 { background: #233dbb; color: #fff; font-size: 1em;}
+    .fila4 { background: #ffe800; color: #222; font-size: 1.15em; font-weight: bold;}
+    .cabc { background: #990022; color: #fff; }
+  </style>
+</head>
+<body>
+  <q></q>
+  <table>
+    <tr>
+      <td class="cab">elemento a</td>
+      <td class="cab">elemento b</td>
+      <td class="cabc cab">elemento c</td>
+    </tr>
+    <tr class="fila2">
+      <td>lemento A</td>
+      <td>lemento B</td>
+      <td>lemento C</td>
+    </tr>
+    <tr class="fila3">
+      <td>emento AA</td>
+      <td>emento BB</td>
+      <td>emento CC</td>
+    </tr>
+    <tr class="fila4">
+      <td>emento AAA</td>
+      <td>emento BBB</td>
+      <td>emento CCC</td>
+    </tr>
+  </table>
+</body>
+</html>

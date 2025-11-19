@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina Personal de Leonardo Rojas</title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto+Mono|Oswald:700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Fira Sans', Arial, sans-serif; margin: 16px; background: #fff; }
+    .titulo { color: #2534d8; font-size: 1.19em; font-weight: bold; margin-top: 30px; }
+    .subtitulo { color: #1f650b; font-weight: bold; font-size:1em; margin: 7px 0;}
+    .container {
+      width: 96vw; 
+      overflow-x: auto;
+      border: 2px solid #c40000;
+      border-radius: 2px;
+      display: flex;
+      margin-top: 18px;
+      background-color: #fff;
+      padding-bottom: 10px;
+    }
+    .caja {
+      flex: none;
+      width: 270px;
+      min-height: 350px;
+      margin: 0;
+      border-right: 2px solid #e50000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: stretch;
+      padding: 12px 8px;
+      box-sizing: border-box;
+    }
+    .yellow { background: #fff989; }
+    .orange { background: linear-gradient(to bottom, #ffd59a, #ffc848 85%); }
+    .green { background: #088e0e; color: #fff; }
+    .white { background: #fff; }
+    .red { background: #ff0000; }
+    .amarillo { color: #fdb800; }
+    .rojo { color: #e40000; }
+    .verde { color: #088e0e; }
+    .caja:last-child { border-right: none; }
+    .caja img, .caja svg { width: 100%; max-width: 120px; margin: 8px auto;}
+    .caja h2, .caja h3 { margin: 4px 0; }
+    .caja ul { list-style-type:circle; font-size: 0.97em; }
+    .youtube { margin: 0 auto 8px auto; }
+    .fondo { font-family:'Roboto Mono', monospace;}
+    .borde-redondo { border-radius: 38px !important; }
+    .azul { color:#10517a;}
+    a { color:#2534d8; font-size: 0.96em; }
+  </style>
+</head>
+<body>
+  <div class="titulo">Pagina Personal de Leonardo Rojas</div>
+  <div style="font-size:0.99em; margin-bottom:5px;">
+    Crea una página web personal mural, que incluya al menos:
+    <ul>
+      <li>Uso de colores para texto y fondo, incluyendo al menos 4 colores destacados en alguna de las cajas.</li>
+      <li>Tipografías externas (Google Fonts...).</li>
+      <li>Distribución en varias cajas horizontales, logos, imágenes y/o video, una imagen SVG.</li>
+      <li>Vídeo, bordes redondeados en alguna caja.</li>
+    </ul>
+    <span style="font-size:0.93em;">La página debe comenzar con el siguiente reconocimiento: "Pagina personal de &lt;nombre y apellido del alumno&gt;"</span>
+  </div>
+  <div class="container">
+    <div class="caja yellow">
+      <div class="subtitulo">Fondo Amarillo</div>
+      <ul>
+        <li class="amarillo">Texto en Color Azul</li>
+        <li class="verde">Texto en Color Verde</li>
+        <li class="rojo">Texto en Color Rojo</li>
+        <li style="font-family: 'Roboto Mono', monospace;">Caracter Étnico: あ</li>
+        <li style="font-family: 'Oswald', sans-serif; font-weight:bold;">Caracter Japonés: レオナルド</li>
+        <li class="azul">Caracter Chino: 书法</li>
+      </ul>
+    </div>
+    <div class="caja yellow">
+      <iframe class="youtube" width="220" height="140" src="https://www.youtube.com/embed/C9xFRbFfZcs" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="caja orange">
+      <div class="subtitulo">Fondo Degradado</div>
+      <ul>
+        <li>Ya imagen o bitmap</li>
+      </ul>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Pierre-Person.jpg/640px-Pierre-Person.jpg" alt="Persona" style="max-width:56px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Golde33443.jpg/640px-Golde33443.jpg" alt="Persona2" style="max-width:56px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/John-Sutherland.jpg/640px-John-Sutherland.jpg" alt="Persona3" style="max-width:56px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Claude_Monet_1899_Nadar_crop.jpg/640px-Claude_Monet_1899_Nadar_crop.jpg" alt="Persona4" style="max-width:56px;">
+    </div>
+    <div class="caja yellow">
+      <iframe class="youtube" width="220" height="70" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allowfullscreen></iframe>
+      <iframe class="youtube" width="220" height="70" src="https://www.youtube.com/embed/vTIIMJ9tUc8" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="caja green borde-redondo">
+      <div style="font-size:1.06em; margin-bottom:10px;"><b>Diferentes Encabezados &lt;h1&gt;</b></div>
+      <h2 style="margin-bottom:10px;">Encabezando Tipo &lt;h2&gt;</h2>
+      <h3>Encabezado Tipo &lt;h3&gt;</h3>
+      <div>Encabezado Tipo <b>&lt;h4&gt;</b></div>
+      <div class="borde-redondo" style="color: #00c3db; margin-top:12px;">Caja Borde Redondo</div>
+    </div>
+    <div class="caja white">
+      <div style="font-weight: bold;">Grafico Vectorial</div>
+      <svg width="95" height="95" viewBox="0 0 100 100">
+        <circle cx="30" cy="35" r="28" fill="black"/>
+        <circle cx="60" cy="50" r="18" fill="red"/>
+        <path d="M40 75 Q70 80 90 40" stroke="#749cd9" stroke-width="5" fill="none"/>
+      </svg>
+    </div>
+    <div class="caja red"></div>
+  </div>
+
+  <a href="#" style="font-size:0.9em; color:#2534d8; display:block; margin-top:10px;">Regreso al Menú Principal</a>
+</body>
+</html>

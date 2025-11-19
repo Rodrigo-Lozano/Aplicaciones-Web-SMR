@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 54 - Tabla fusionada</title>
+  <style>
+    q { display:none; }
+    table {
+      border-collapse: collapse;
+      background: #efefef;
+      margin: 20px auto;
+      font-size: 1.18em;
+      font-family: Times New Roman, serif;
+      width: 490px;
+    }
+    th, td {
+      border: 2px solid #444;
+      text-align: center;
+      padding: 7px 3px;
+    }
+    .titulo {
+      font-style: italic;
+      padding: 7px;
+      background: #dedede;
+      border-bottom: 2px solid #444;
+      font-size: 1.08em;
+    }
+    .cabecera {
+      font-weight: bold;
+      background: #fff;
+    }
+    .media {
+      font-weight: bold;
+      background: #fff;
+      border-bottom: none;
+    }
+    .cabsub {
+      font-weight: bold;
+      background: #fff;
+      border-top: none;
+    }
+    .ojos {
+      font-weight: bold;
+      background: #fff;
+      color: #111;
+      font-size: 1.04em;
+    }
+    .fila {
+      font-weight: bold;
+      background: #fff;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <q></q>
+  <table>
+    <tr>
+      <th colspan="5" class="titulo">Una tabla de muestra con celdas fusionadas</th>
+    </tr>
+    <tr>
+      <th rowspan="2" class="cabecera"> </th>
+      <th colspan="2" class="media">Media</th>
+      <th rowspan="2" class="ojos">Ojos<br>Rojos</th>
+    </tr>
+    <tr>
+      <th class="cabsub">altura</th>
+      <th class="cabsub">peso</th>
+    </tr>
+    <tr>
+      <td class="fila">Machos</td>
+      <td>1.9</td>
+      <td>0.003</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td class="fila">Hembras</td>
+      <td>1.7</td>
+      <td>0.002</td>
+      <td>43%</td>
+    </tr>
+  </table>
+</body>
+</html>

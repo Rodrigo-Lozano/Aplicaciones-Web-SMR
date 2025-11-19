@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 58 - Tabla celdas extendidas verticalmente</title>
+  <style>
+    q { display:none; }
+    .titulo {
+      font-size: 2em;
+      font-family: Times New Roman, serif;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 12px;
+      margin-top: 8px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 0 0 0 15px;
+      font-size: 1.2em;
+      background: #fff;
+      font-family: Times New Roman, serif;
+      min-width: 390px;
+    }
+    th, td {
+      border: 2px solid #888;
+      text-align: center;
+      padding: 6px 4px;
+      min-width: 64px;
+      min-height: 28px;
+    }
+  </style>
+</head>
+<body>
+  <q></q>
+  <div class="titulo">Tabla con celdas extendidas verticalmente</div>
+  <table>
+    <tr>
+      <td>manzana</td>
+      <td>pera</td>
+      <td>fresa</td>
+      <td rowspan="2">naranja</td>
+    </tr>
+    <tr>
+      <td>melón</td>
+      <td>sandía</td>
+      <td>pomelo</td>
+    </tr>
+    <tr>
+      <td>cereza</td>
+      <td rowspan="2">ciruela</td>
+      <td>kiwi</td>
+      <td rowspan="2">granada</td>
+    </tr>
+    <tr>
+      <td>uva</td>
+      <td>níspero</td>
+    </tr>
+  </table>
+</body>
+</html>

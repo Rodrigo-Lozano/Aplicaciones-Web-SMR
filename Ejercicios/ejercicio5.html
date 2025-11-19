@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 5</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(7, 60px);
+      gap: 1px;
+      border: 2px solid #888;
+      width: 650px;
+      margin-top: 10px;
+    }
+    .grid-item {
+      border: 1px solid #888;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+    }
+    /* Colores suaves */
+    .amarillo { background: #FFF8DC; }
+    .azul { background: #DAEEF3; }
+    .rojo { background: #F8E0DC; }
+    .verde { background: #E9F7CF; }
+    .blanco { background: #fff; }
+    /* Ubicación y expansión de los items */
+    .i1  { grid-column: 1; grid-row: 1; }
+    .i2  { grid-column: 2 / span 2; grid-row: 1; }
+    .i3  { grid-column: 4; grid-row: 1; }
+    .i4  { grid-column: 4; grid-row: 2 / span 3; }
+    .i5  { grid-column: 1; grid-row: 2; }
+    .i6  { grid-column: 2; grid-row: 2; }
+    .i7  { grid-column: 3; grid-row: 2; }
+    .i8  { grid-column: 1 / span 2; grid-row: 3; }
+    .i9  { grid-column: 3; grid-row: 3; }
+    .i10 { grid-column: 1; grid-row: 4; }
+    .i11 { grid-column: 2; grid-row: 4; }
+    .i12 { grid-column: 3; grid-row: 4; }
+    .i13 { grid-column: 4; grid-row: 4; }
+    .i14 { grid-column: 1; grid-row: 5; }
+    .i15 { grid-column: 2 / span 2; grid-row: 5 / span 2; }
+    .i16 { grid-column: 4; grid-row: 5; }
+    .i17 { grid-column: 1; grid-row: 6; }
+    .i18 { grid-column: 4; grid-row: 6 / span 2; }
+  </style>
+</head>
+<body>
+  <header>
+  </header>
+  <div class="grid-container">
+    <div class="grid-item amarillo i1">1</div>
+    <div class="grid-item rojo i2">2</div>
+    <div class="grid-item amarillo i3">3</div>
+    <div class="grid-item azul i4">4</div>
+    <div class="grid-item blanco i5">5</div>
+    <div class="grid-item azul i6">6</div>
+    <div class="grid-item rojo i7">7</div>
+    <div class="grid-item rojo i8">8</div>
+    <div class="grid-item blanco i9">9</div>
+    <div class="grid-item verde i10">10</div>
+    <div class="grid-item azul i11">11</div>
+    <div class="grid-item blanco i12">12</div>
+    <div class="grid-item rojo i13">13</div>
+    <div class="grid-item azul i14">14</div>
+    <div class="grid-item verde i15">15</div>
+    <div class="grid-item blanco i16">16</div>
+    <div class="grid-item azul i17">17</div>
+    <div class="grid-item amarillo i18">18</div>
+  </div>
+</body>
+</html>
