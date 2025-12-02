@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #000;
+}
+
+/* CABECERA SUPERIOR */
+header {
+    background: #1f4e79;      /* azul similar al enunciado */
+    color: white;
+    padding: 15px 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* MENÚ HORIZONTAL */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav li {
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CONTENEDOR GENERAL */
+main {
+    width: 960px;             /* ancho típico de examen */
+    margin: 20px auto;
+}
+
+/* TITULOS DE SECCIÓN */
+section h2 {
+    margin: 15px 0 8px;
+    font-size: 1.3em;
+}
+
+/* BLOQUE RESUMEN IZQUIERDA */
+.bloque-resumen {
+    background: #f3f3f3;
+    padding: 10px;
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+}
+
+.bloque-resumen table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.bloque-resumen th,
+.bloque-resumen td {
+    border: 1px solid #999;
+    padding: 4px 6px;
+    vertical-align: top;
+}
+
+.bloque-resumen th {
+    background: #dbe5f1;
+}
+
+/* BIOGRAFÍA OCUPA TODO EL ANCHO DEBAJO */
+#biografia {
+    clear: both;
+    margin-top: 20px;
+}
+
+#biografia p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+/* BLOQUE FOTOGRAFÍAS EN DOS COLUMNAS */
+.bloque-fotos {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.bloque-fotos .col-texto {
+    width: 55%;
+    font-size: 0.9em;
+}
+
+.bloque-fotos .col-texto p {
+    margin-bottom: 5px;
+}
+
+.bloque-fotos .col-imagenes {
+    width: 45%;
+}
+
+.bloque-fotos figure {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bloque-fotos img {
+    max-width: 100%;
+    border: 1px solid #999;
+}
+
+/* FRASES */
+#frases ol {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+#frases li {
+    margin-bottom: 4px;
+}
+
+/* FIRMA GRANDE */
+#firma {
+    margin-top: 15px;
+}
+
+.firma-dibujo {
+    font-size: 2.5em;
+    font-family: "Brush Script MT", cursive;
+    margin-top: 5px;
+}
+
+/* OPINIÓN A LA DERECHA / ABAJO */
+.bloque-opinion {
+    margin-top: 20px;
+    border: 1px solid #999;
+    padding: 10px;
+    width: 40%;
+    float: right;
+}
+
+.bloque-opinion p {
+    margin-bottom: 8px;
+}
+
+.campo {
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 4px;
+    font-size: 0.9em;
+}
+
+.bloque-opinion input[type="submit"] {
+    margin-top: 5px;
+    padding: 5px 10px;
+}
